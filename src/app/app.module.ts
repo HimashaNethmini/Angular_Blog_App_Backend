@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms'; //making form dynmaic
 
 import { AngularFireModule } from '@angular/fire/compat'; // Import AngularFireModule
 import { FirestoreModule } from '@angular/fire/firestore';
@@ -25,7 +26,8 @@ import { CategoriesComponent } from './categories/categories.component';
     BrowserModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
-    FirestoreModule 
+    FirestoreModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
