@@ -1,8 +1,6 @@
-.card-body {
-    
-
+.card {
+    height: 200px;
 }
-
 .para {
     color: black;
 }
